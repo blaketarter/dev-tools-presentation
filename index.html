@@ -20,16 +20,7 @@
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
-				var link = document.createElement( 'link' );
-				link.rel = 'stylesheet';
-				link.type = 'text/css';
-				link.href = 'css/print/pdf.css';
-				document.getElementsByTagName( 'head' )[0].appendChild( link );
-			}
-		</script>
+		<link rel="stylesheet" href="/css/custom.css">
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -48,14 +39,53 @@
 					<p>By: Blake Tarter</p>
 					<a href="https://github.com/blaketarter/dev-tools-presentation">Presentation can be found here.</a>
 				</section>
+
+				<section>
+					<h1>About this Presentation</h1>
+					<p>I built this using <a href="https://github.com/hakimel/reveal.js">reveal.js</a></p>
+					<p>Super simple Presentation framework using pure dom elements.</p>
+				</section>
+
 				<section data-background="#BDC3C7">
 					<h1>Overview</h1>
-					<ul>
+					<ol>
 						<li>Using the Tools</li>
 						<li>Emulation</li>
 						<li>Customizing the Look</li>
 						<li>Command Line API</li>
-					</ul>
+					</ol>
+				</section>
+
+				<section data-background="#3498DB" class="white-text">
+					<h1>Using the Tools</h1>
+					<br />
+					<pre><code>⌘ (Command) + option + i or ctr + shift + i on windows</code></pre>
+					<br />
+					<p>Or for those who dont like keyboard shortcuts</p>
+					<br />
+					<pre><code>Right Click -> Inspect Element</code></pre>
+					<br />
+				</section>
+
+				<section data-background="#2980B9">
+					<section class="white-text">
+						<h1>Now what?</h1>
+						<img src="img/devtools-window.png" alt="devtools" />
+					</section>
+
+					<section class="white-text">
+						<h1>The Tabs</h1>
+						<ul>
+							<li>Elements</li>
+							<li>Network</li>
+							<li>Sources</li>
+							<li>Timeline</li>
+							<li>Profiles</li>
+							<li>Resources</li>
+							<li>Audits</li>
+							<li>Console</li>
+						</ul>
+					</section>
 				</section>
 			</div>
 

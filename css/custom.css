@@ -1,0 +1,7 @@
+.white-text > * {
+  color: white !important;
+}
+
+.reveal .progress span {
+  background-color: #F1C40F
+}
