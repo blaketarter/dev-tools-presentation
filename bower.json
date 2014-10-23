@@ -1,0 +1,13 @@
+{
+  "name": "dev-tools-presentation",
+  "version": "0.0.1",
+  "homepage": "https://github.com/blaketarter/dev-tools-presentation",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
