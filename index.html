@@ -37,6 +37,8 @@
 					<h1>Chrome Dev Tools</h1>
 					<h3>And why you should be using them.</h3>
 					<p>By: Blake Tarter</p>
+					<a href="https://twitter.com/itsblaketarter">@itsblaketarter</a>
+					<br />
 					<a href="https://github.com/blaketarter/dev-tools-presentation">Presentation can be found here.</a>
 				</section>
 
@@ -50,9 +52,11 @@
 					<h1>Overview</h1>
 					<ol>
 						<li><a href="#/using">Using the Tools</a></li>
+						<li><a href="#/tabs">The Tabs</a></li>
 						<li><a href="#/emulation">Emulation</a></li>
 						<li><a href="#/look">Customizing the Look</a></li>
-						<li>Command Line API</li>
+						<li><a href="#/capi">Command Line API</a></li>
+						<li><a href="#/links">Usefull Links</a></li>
 					</ol>
 				</section>
 
@@ -67,25 +71,23 @@
 					<br />
 				</section>
 
-				<section data-background="#2980B9">
-					<section class="white-text">
-						<h1>Now what?</h1>
-						<img src="img/devtools-window.png" alt="devtools" />
-					</section>
+				<section data-background="#95A5A6" class="white-text">
+					<h1>Now what?</h1>
+					<img src="img/devtools-window.png" alt="devtools" />
+				</section>
 
-					<section class="white-text">
-						<h1>The Tabs</h1>
-						<ul>
-							<li><a href="#/elements">Elements</a></li>
-							<li><a href="#/network">Network</a></li>
-							<li><a href="#/sources">Sources</li>
-							<li><a href="#/timeline">Timeline</a></li>
-							<li><a href="#/profiles">Profiles</a></li>
-							<li><a href="#/resources">Resources</a></li>
-							<li><a href="#/audits">Audits</a></li>
-							<li><a href="#/console">Console</a></li>
-						</ul>
-					</section>
+				<section id="tabs" data-background="#2980B9" class="white-text">
+					<h1>The Tabs</h1>
+					<ol>
+						<li><a href="#/elements">Elements</a></li>
+						<li><a href="#/network">Network</a></li>
+						<li><a href="#/sources">Sources</li>
+						<li><a href="#/timeline">Timeline</a></li>
+						<li><a href="#/profiles">Profiles</a></li>
+						<li><a href="#/resources">Resources</a></li>
+						<li><a href="#/audits">Audits</a></li>
+						<li><a href="#/console">Console</a></li>
+					</ol>
 				</section>
 
 				<section id="elements" data-background="#3498DB" class="white-text">
@@ -124,7 +126,7 @@
 					<img src="img/timeline_colors.png" alt="colors" />
 					<h1>Timeline</h1>
 					<ul>
-						<li>Can record activity and show all kidns of browser activity and various statistics</li>
+						<li>Can record activity and show all kinds of browser activity and various statistics</li>
 						<li>Also shows frame/memory statistics</li>
 					</ul>
 				</section>
@@ -133,7 +135,7 @@
 					<img src="img/profiles_tab.png" alt="profiles" />
 					<h1>Profiles</h1>
 					<ul>
-						<li>The CPU profiler shows execution timespent on javascript</li>
+						<li>The CPU profiler shows execution time spent on javascript</li>
 						<li>The Heap profiler shows memory usage by the DOM and javascript</li>
 						<li>The CSS profiler shows time spent matching selectors to elements in the DOM</li>
 					</ul>
@@ -144,7 +146,7 @@
 					<h1>Resources</h1>
 					<ul>
 						<li>Access to view/edit local/session storage and cookies</li>
-						<li>Shows ifraes on page</li>
+						<li>Shows iframes on page</li>
 						<li>Shows other varies font/img files as well that are cached</li>
 					</ul>
 				</section>
@@ -154,7 +156,7 @@
 					<h1>Audits</h1>
 					<ul>
 						<li>Runs a test that shows warnings/recommendations to improve web page performance</li>
-						<li>Can tell it to run or current state or reload the page then run the test (so it works on ajax apps)</li>
+						<li>Can tell it to run on current state or reload the page then run the test (so it works on ajax apps)</li>
 					</ul>
 				</section>
 
@@ -230,6 +232,43 @@
 
 				<section data-background="#8E44AD" class="white-text">
 					<img src="img/themed_tools.png" alt="themed tools" />
+				</section>
+
+				<section id="capi" data-background="#E74C3C" class="white-text">
+					<h1>Command Line API</h1>
+					<p>For anyone who uses the javscript console the Command Line API is indespensable. It has a heap of tools that range in uses.</p>
+					<p>Do note that these are only available for use in the Chrome Dev Tools console and not in any actual script.</p>
+				</section>
+
+				<section data-background="#C0392B" class="white-text">
+					<h1>$ and $$</h1>
+					<img src="img/query_selector.png" alt="query selector" />
+					<p>$ maps to <pre><code>document.querySelector</code></pre></p>
+					<p>and $$ maps to <pre><code>document.querySelectorAll</code></pre></p>
+					<p>Even without jQuery loaded on the page these work almost like jQuery selectors.</p>
+				</section>
+
+				<section data-background="#E74C3C" class="white-text">
+					<h1>$_ and $0 - $4</h1>
+					<p>$_ simply returns the value of the last evaluated expression</p>
+					<p>$n returns the nth selected DOM node from the elements list, from 0 - 4 are remembered.</p>
+				</section>
+
+				<section data-background="#C0392B" class="white-text">
+					<h1>Other Useful Methods</h1>
+					<ul>
+						<li>$x(path) can be used to match a valid xpath expression.</li>
+						<li>dir(object) can be used to display all of the methods and properties on a specified object, much like how jQuery objects are displayed in the console.</li>
+						<li>getEventListeners(object) will return a list of all the registered event listeners on the specified object.</li>
+					</ul>
+				</section>
+
+				<section id="links" data-background="#34495E" class="white-text">
+					<h1>Usefull Links</h1>
+					<p><a href="https://developer.chrome.com/devtools">Chrome DevTools Overview</a></p>
+					<p><a href="https://developer.chrome.com/devtools/docs/device-mode">Device Mode &amp; Mobile Emulation</a></p>
+					<p><a href="http://darcyclarke.me/design/skin-your-chrome-inspector/">Skin your Chrome Inspector</a></p>
+					<p><a href="https://developer.chrome.com/devtools/docs/commandline-api">Command Line API Reference</a></p>
 				</section>
 			</div>
 		</div>
