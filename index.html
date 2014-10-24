@@ -49,14 +49,14 @@
 				<section data-background="#BDC3C7">
 					<h1>Overview</h1>
 					<ol>
-						<li>Using the Tools</li>
+						<li><a href="#/using">Using the Tools</a></li>
 						<li>Emulation</li>
 						<li>Customizing the Look</li>
 						<li>Command Line API</li>
 					</ol>
 				</section>
 
-				<section data-background="#3498DB" class="white-text">
+				<section id="using" data-background="#3498DB" class="white-text">
 					<h1>Using the Tools</h1>
 					<br />
 					<pre><code>⌘ (Command) + option + i or ctr + shift + i on windows</code></pre>
@@ -76,19 +76,123 @@
 					<section class="white-text">
 						<h1>The Tabs</h1>
 						<ul>
-							<li>Elements</li>
-							<li>Network</li>
-							<li>Sources</li>
-							<li>Timeline</li>
-							<li>Profiles</li>
-							<li>Resources</li>
-							<li>Audits</li>
-							<li>Console</li>
+							<li><a href="#/elements">Elements</a></li>
+							<li><a href="#/network">Network</a></li>
+							<li><a href="#/sources">Sources</li>
+							<li><a href="#/timeline">Timeline</a></li>
+							<li><a href="#/profiles">Profiles</a></li>
+							<li><a href="#/resources">Resources</a></li>
+							<li><a href="#/audits">Audits</a></li>
+							<li><a href="#/console">Console</a></li>
 						</ul>
 					</section>
 				</section>
-			</div>
 
+				<section id="elements" data-background="#3498DB" class="white-text">
+					<img src="img/elements_tab.png" alt="elements" />
+					<h1>Elements</h1>
+					<ul>
+						<li>Shows DOM structure</li>
+						<li>Different than View Source</li>
+						<li>Editable</li>
+						<li>Can show shadow DOM</li>
+					</ul>
+				</section>
+
+				<section id="network" data-background="#2980B9" class="white-text">
+					<img src="img/network_tab.png" alt="network" />
+					<h1>Network</h1>
+					<ul>
+						<li>Shows all downloaded files</li>
+						<li>Shows the status of files and time to download/blocking time</li>
+						<li>Can be filtered by type of file</li>
+						<li>Useful to see what files are taking long to download/are blocking other things from downloading</li>
+					</ul>
+				</section>
+
+				<section id="sources" data-background="#3498DB" class="white-text">
+					<img src="img/sources_tab.png" alt="sources" />
+					<h1>Sources</h1>
+					<ul>
+						<li>Shows folder structure of the source files</li>
+						<li>Files can be opened/inspected/edited/debugged</li>
+					</ul>
+				</section>
+
+				<section id="timeline" data-background="#2980B9" class="white-text">
+					<img src="img/timeline_tab.png" alt="timeline" />
+					<img src="img/timeline_colors.png" alt="colors" />
+					<h1>Timeline</h1>
+					<ul>
+						<li>Can record activity and show all kidns of browser activity and various statistics</li>
+						<li>Also shows frame/memory statistics</li>
+					</ul>
+				</section>
+
+				<section id="profiles" data-background="#3498DB" class="white-text">
+					<img src="img/profiles_tab.png" alt="profiles" />
+					<h1>Profiles</h1>
+					<ul>
+						<li>The CPU profiler shows execution timespent on javascript</li>
+						<li>The Heap profiler shows memory usage by the DOM and javascript</li>
+						<li>The CSS profiler shows time spent matching selectors to elements in the DOM</li>
+					</ul>
+				</section>
+
+				<section id="resources" data-background="#2980B9" class="white-text">
+					<img src="img/resources_tab.png" alt="resources" />
+					<h1>Resources</h1>
+					<ul>
+						<li>Access to view/edit local/session storage and cookies</li>
+						<li>Shows ifraes on page</li>
+						<li>Shows other varies font/img files as well that are cached</li>
+					</ul>
+				</section>
+
+				<section id="audits" data-background="#3498DB" class="white-text">
+					<img src="img/audits_tab.png" alt="audits" />
+					<h1>Audits</h1>
+					<ul>
+						<li>Runs a test that shows warnings/recommendations to improve web page performance</li>
+						<li>Can tell it to run or current state or reload the page then run the test (so it works on ajax apps)</li>
+					</ul>
+				</section>
+
+				<section id="console" data-background="#2980B9" class="white-text">
+					<img src="img/console_tab.png" alt="console" />
+					<h1>Console</h1>
+					<ul>
+						<li>Shows results of javascript console.log</li>
+						<li>Can also run any valid javascript code</li>
+						<li>Has access to the Command Line API</li>
+						<li>Can be configured to show all XHR requests as well</li>
+						<li>Can be brought up at any time with ESC key</li>
+					</ul>
+				</section>
+
+				<section id="emulation" data-background="#2ECC71" class="white-text">
+					<h1>Emulation</h1>
+					<p>Chrome Dev tools have the ability to emulate both mobile devices and mobile networks.</p>
+					<p>This is a usefull tool when working with responsive design.</p>
+				</section>
+
+				<section data-background="#27AE60" class="white-text">
+					<h1>Opening Emulation</h1>
+					<img src="img/emulation_button.png" alt="emulation" />
+					<p>To turn on Emulation just click on the mobile device icon in the top left of the dev tools.</p>
+				</section>
+
+				<section data-background="#2ECC71" class="white-text">
+					<img src="img/emulation_view.png" alt="emulation view" />
+				</section>
+
+				<section data-background="#27AE60" class="white-text">
+					<h1>Choosing a Device</h1>
+					<img src="img/emulation_select1.png" alt="select" />
+					<img src="img/emulation_select2.png" alt="select" />
+					<p>Just select a device from the dropdown list then refresh the page to reload user agent information.</p>
+				</section>
+			</div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
